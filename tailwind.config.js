@@ -17,6 +17,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      minWidth: {
+        10: '2.5rem',
+      },
       borderWidth: {
         3: '3px',
       },

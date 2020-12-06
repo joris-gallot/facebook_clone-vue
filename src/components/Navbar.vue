@@ -36,7 +36,7 @@
       <div
         content="Watch"
         v-tippy
-        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-100 ease-in focus:outline-none"
+        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-50 ease-in focus:outline-none"
       >
         <font-awesome-icon icon="desktop" size="lg" />
       </div>
@@ -44,7 +44,7 @@
       <div
         content="Marketplace"
         v-tippy
-        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-100 ease-in focus:outline-none"
+        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-50 ease-in focus:outline-none"
       >
         <font-awesome-icon icon="store" size="lg" />
       </div>
@@ -52,7 +52,7 @@
       <div
         v-tippy
         content="Groupes"
-        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-100 ease-in focus:outline-none"
+        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-50 ease-in focus:outline-none"
       >
         <font-awesome-icon icon="users" size="lg" />
       </div>
@@ -60,7 +60,7 @@
       <div
         v-tippy
         content="Gaming"
-        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-100 ease-in focus:outline-none"
+        class="hover:bg-gray-hover px-12 py-3.5 rounded-lg cursor-pointer transition duration-50 ease-in focus:outline-none"
       >
         <font-awesome-icon icon="gamepad" size="lg" />
       </div>
@@ -78,11 +78,47 @@
         <span class="mr-2">Simon</span>
       </div>
       <div class="flex items-center space-x-2">
-        <button
-          class="bg-button p-1 rounded-full w-10 h-10 hover:bg-gray-hover transition duration-100 ease-in focus:outline-none"
-        >
-          <font-awesome-icon icon="plus" />
-        </button>
+        <dropdown :minWidth="375" :maxWidth="375" position="bottom">
+          <template #trigger="{ open }">
+            <button
+              :class="
+                open
+                  ? 'bg-primary bg-opacity-20 hover:bg-opacity-30'
+                  : 'bg-button hover:bg-gray-hover'
+              "
+              class="p-1 rounded-full w-10 h-10  transition duration-100 ease-in focus:outline-none"
+            >
+              <font-awesome-icon
+                :class="open ? 'text-primary' : 'text-white'"
+                icon="plus"
+              />
+            </button>
+          </template>
+
+          <template #content>
+            <div
+              class="bg-card rounded-lg px-3 pt-3 pb-2 border border-gray-border space-y-3"
+            >
+              <span class="text-2xl font-bold ml-1">Créer</span>
+              <div class="flex flex-col">
+                <list-item
+                  v-for="(item, index) in items.slice(0, 3)"
+                  :item="item"
+                  :key="index"
+                />
+
+                <hr class="text-gray-border my-2" />
+
+                <list-item
+                  v-for="(item, index) in items.slice(3)"
+                  :item="item"
+                  :key="index"
+                />
+              </div>
+            </div>
+          </template>
+        </dropdown>
+
         <button
           class="bg-button p-1 rounded-full w-10 h-10 hover:bg-gray-hover transition duration-100 ease-in focus:outline-none"
         >
@@ -111,5 +147,56 @@
 </template>
 
 <script>
-export default {}
+import ListItem from './common/ListItem.vue'
+export default {
+  components: { ListItem },
+  data() {
+    return {
+      items: [
+        {
+          title: 'Publication',
+          description: "Partagez une publication sur le fil d'actualité.",
+          icon: 'edit',
+        },
+        {
+          title: 'Story',
+          description: 'Partagez une photo ou un message.',
+          icon: 'book-open',
+        },
+        {
+          title: 'Évènement marquant',
+          description: 'Ajoutez un évènement marquant sur votre profil.',
+          icon: 'star',
+        },
+        {
+          title: 'Page',
+          description: 'Communiquez et partagez avec vos clients ou fans.',
+          icon: 'flag',
+        },
+        {
+          title: 'Groupe',
+          description:
+            "Communiquez avec des personnes qui partagent vos centres d'intérêt.",
+          icon: 'users',
+        },
+        {
+          title: 'Évènement',
+          description:
+            "Rassemblez les gens autour d'un évènement public ou privé.",
+          icon: 'calendar-plus',
+        },
+        {
+          title: 'Petite annonce Marketplace',
+          description: 'Vendez des articles aux membres de votre communauté.',
+          icon: 'shopping-basket',
+        },
+        {
+          title: 'Collecte de fonds',
+          description: 'Levez des fonds pour une cause qui tient à cœur.',
+          icon: 'hand-holding-heart',
+        },
+      ],
+    }
+  },
+}
 </script>

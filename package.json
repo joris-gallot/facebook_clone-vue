@@ -16,6 +16,7 @@
     "core-js": "^3.6.5",
     "postcss": "^7",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "tippy.js": "^6.2.7",
     "vue": "^2.6.11",
     "vue-tippy": "^4.7.2"
   },
