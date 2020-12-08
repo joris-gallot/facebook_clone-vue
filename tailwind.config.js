@@ -19,6 +19,7 @@ module.exports = {
     extend: {
       minWidth: {
         10: '2.5rem',
+        16: '4rem',
       },
       borderWidth: {
         3: '3px',
@@ -45,6 +46,7 @@ module.exports = {
         'gray-hover': '#4e4f50',
         'gray-text': '#b0b3b8',
         'gray-border': '#393a3b',
+        'gray-button': '#989c9f',
       },
     },
   },

@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import './assets/styles/index.css'
 import VueTippy, { TippyComponent } from 'vue-tippy'
+import { formatDistanceToNow } from 'date-fns'
+import { fr } from 'date-fns/locale'
 
 import Dropdown from './components/common/Dropdown'
 import ListItem from './components/common/ListItem'
@@ -24,6 +26,9 @@ import {
   faCalendarPlus,
   faShoppingBasket,
   faHandHoldingHeart,
+  faEllipsisH,
+  faExpandArrowsAlt,
+  faVideo,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faFacebook,
@@ -49,11 +54,22 @@ library.add(
   faFlag,
   faCalendarPlus,
   faShoppingBasket,
-  faHandHoldingHeart
+  faHandHoldingHeart,
+  faEllipsisH,
+  faExpandArrowsAlt,
+  faVideo
 )
 
 Vue.use(VueTippy, {
   animation: 'fade',
+})
+
+Vue.filter('date', value => {
+  if (isNaN(Date.parse(value))) {
+    return value
+  }
+
+  return formatDistanceToNow(new Date(value), { locale: fr })
 })
 
 Vue.component('dropdown', Dropdown)

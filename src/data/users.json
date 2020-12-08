@@ -1,0 +1,110 @@
+[
+  {
+    "image": "https://i.pravatar.cc/400",
+    "name": "Daniel Gamelin",
+    "lastMessage": {
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": true
+  },
+  {
+    "image": "https://i.pravatar.cc/500",
+    "name": "Voleta Sevier",
+    "lastMessage": {
+      "content": "nisi ut aliquip ex ea commodo consequat",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": true
+  },
+  {
+    "image": "https://i.pravatar.cc/600",
+    "name": "Latimer Tardif",
+    "lastMessage": {
+      "content": "nerror sit",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": false
+  },
+  {
+    "image": "https://i.pravatar.cc/700",
+    "name": "Moore Béland",
+    "lastMessage": {
+      "content": "adipisci velit, sed quia non.",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": false
+  },
+  {
+    "image": "https://i.pravatar.cc/800",
+    "name": "Lirienne Chalut",
+    "lastMessage": {
+      "content": "praising",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": true
+  },
+  {
+    "image": "https://i.pravatar.cc/900",
+    "name": "Christelle Brisebois",
+    "lastMessage": {
+      "content": "encounter consequences that are extremely",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": false
+  },
+  {
+    "image": "https://i.pravatar.cc/1000",
+    "name": "Nanna Flamand",
+    "lastMessage": {
+      "content": "Nor again is there anyone who",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": true
+  },
+  {
+    "image": "https://i.pravatar.cc/1100",
+    "name": "Telford Alexandre",
+    "lastMessage": {
+      "content": "who chooses to enjoy a pleasure",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": true
+  },
+  {
+    "image": "https://i.pravatar.cc/1200",
+    "name": "Sennet Ferland",
+    "lastMessage": {
+      "content": "sed quia non",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": false
+  },
+  {
+    "image": "https://i.pravatar.cc/1300",
+    "name": "Armand Brunault",
+    "lastMessage": {
+      "content": "nostrum exercitationem ullam",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": false
+  },
+  {
+    "image": "https://i.pravatar.cc/1400",
+    "name": "Luc Pinette",
+    "lastMessage": {
+      "content": "Excepteur sint",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": false
+  },
+  {
+    "image": "https://i.pravatar.cc/1500",
+    "name": "Warrane Larocque",
+    "lastMessage": {
+      "content": "or avoids pleasure itself",
+      "sendAt": "Tue Dec 08 2020 18:36:39 GMT+0100 (heure normale d’Europe centrale)"
+    },
+    "isConnected": true
+  }
+]
